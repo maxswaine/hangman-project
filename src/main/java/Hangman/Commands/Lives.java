@@ -26,26 +26,28 @@ public class Lives {
         }
 
     }
-
-    public int setDifficulty() {
+    public HangmanDifficulty setDifficulty() {
         Scanner getInteger = new Scanner(System.in);
         int commandInteger;
+
         do {
             while (!getInteger.hasNextInt()) {
                 System.out.println("Please enter a valid integer.");
                 getInteger.next();
             }
             commandInteger = getInteger.nextInt();
-        } while (commandInteger < 0 || commandInteger >= chooseDifficulty.length + 1);
+        } while (commandInteger < 1 || commandInteger > chooseDifficulty.length);
+
         switch (commandInteger) {
             case 1:
-                return 8;
+                return HangmanDifficulty.EASY;
             case 2:
-                return 5;
+                return HangmanDifficulty.NORMAL;
             case 3:
-                return 3;
+                return HangmanDifficulty.HARD;
             default:
-                return 0;
+                return null;
         }
     }
 }
+

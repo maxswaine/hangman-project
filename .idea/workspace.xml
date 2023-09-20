@@ -4,9 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5ff31bae-2e96-4715-83be-f9d01e0a644d" name="Changes" comment="">
+    <list default="true" id="5ff31bae-2e96-4715-83be-f9d01e0a644d" name="Changes" comment="Removing error">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Hangman/Commands/HangmanDifficulty.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Hangman/Commands/LivesTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Hangman/Commands/CaptureGuess.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Hangman/Commands/CaptureGuess.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Hangman/Commands/HangmanStages.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Hangman/Commands/HangmanStages.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Hangman/Commands/Lives.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Hangman/Commands/Lives.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Hangman/Commands/PlayGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Hangman/Commands/PlayGame.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,6 +22,7 @@
       <list>
         <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -99,6 +104,15 @@
       <option name="presentableId" value="Default" />
       <updated>1695154028636</updated>
     </task>
+    <task id="LOCAL-00001" summary="Removing error">
+      <option name="closed" value="true" />
+      <created>1695200747247</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1695200747247</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -111,5 +125,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Removing error" />
+    <option name="LAST_COMMIT_MESSAGE" value="Removing error" />
   </component>
 </project>

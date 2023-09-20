@@ -5,16 +5,17 @@ import java.util.Scanner;
 
 public class PlayGame {
     public static void playGame(){
-        Hangman.Commands.CaptureGuess newGuess = new Hangman.Commands.CaptureGuess();
-        Hangman.Commands.Lives setLives = new Hangman.Commands.Lives();
-        Hangman.Commands.CheckInput checkInput = new Hangman.Commands.CheckInput();
+        CaptureGuess newGuess = new CaptureGuess();
+        Lives setLives = new Lives();
+        CheckInput checkInput = new CheckInput();
         String wordToGuess = Words.generateWord();
-        Hangman.Commands.DisplayWord displayWord = new Hangman.Commands.DisplayWord();
-        ArrayList<Character> wordToGuessArray = Hangman.Commands.Words.convertWordToArray(wordToGuess);
+        DisplayWord displayWord = new DisplayWord();
+        ArrayList<Character> wordToGuessArray = Words.convertWordToArray(wordToGuess);
         boolean gameOver;
 
         setLives.printDifficulties();
-        int lives = setLives.setDifficulty();
+        HangmanDifficulty difficulty = setLives.setDifficulty();
+        int lives = difficulty.getLives();
         ArrayList<Character> initialDisplay = displayWord.initialDisplay(wordToGuessArray);
         System.out.println(initialDisplay);
         setLives.setLives(lives);
@@ -24,7 +25,7 @@ public class PlayGame {
             boolean correctInput = checkInput.checkCorrectInput(wordToGuessArray, charGuess.get(charGuess.size() -1 ), charGuess);
             if (!correctInput){
                 setLives.loseOneLife();
-                HangmanStages.printHangman(setLives.getLives());
+                HangmanStages.printHangman(setLives.getLives(), difficulty);
             }
             System.out.println("Lives left: " + setLives.getLives());
             gameOver = checkInput.checkGameOver(wordToGuessArray, charGuess, setLives.getLives(), wordToGuess);

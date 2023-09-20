@@ -5,9 +5,9 @@ import java.util.Scanner;
 
 public class CaptureGuess {
     private ArrayList<Character> guessArray = new ArrayList<>();
+    Scanner characterGuess = new Scanner(System.in);
 
     public ArrayList<Character> captureGuess() {
-        Scanner characterGuess = new Scanner(System.in);
         char charGuess = 0;
 
         while (true) {
