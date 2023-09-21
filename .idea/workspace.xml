@@ -5,11 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5ff31bae-2e96-4715-83be-f9d01e0a644d" name="Changes" comment="Removing error">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Hangman/Commands/HangmanDifficulty.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Hangman/Commands/CaptureGuess.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Hangman/Commands/CaptureGuess.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Hangman/Commands/HangmanStages.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Hangman/Commands/HangmanStages.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Hangman/Commands/Lives.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Hangman/Commands/Lives.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Hangman/Commands/CheckInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Hangman/Commands/CheckInput.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Hangman/Commands/PlayGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Hangman/Commands/PlayGame.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

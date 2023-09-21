@@ -6,14 +6,14 @@ public class CheckInput {
 
     private boolean gameOver = false;
 
-    public boolean checkGameOver(ArrayList<Character> wordToGuess, ArrayList<Character> guessArray, int lives, String word) {
+    public boolean checkGameOver(ArrayList<Character> wordToGuess, ArrayList<Character> guessArray, int lives) {
         if (guessArray.containsAll(wordToGuess)) {
             gameOver = true;
             System.out.println("You win!!");
         } else if (lives == 0) {
             gameOver = true;
             System.out.println("You lose, LOSER!");
-            System.out.println("The word you were trying to guess was: "+ word);
+            System.out.println("The word you were trying to guess was: "+ wordToGuess.toString());
         }
         return gameOver;
     }

@@ -1,5 +1,6 @@
 package Hangman.Commands;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Lives {
@@ -17,6 +18,7 @@ public class Lives {
     public void loseOneLife() {
         lives--;
     }
+
 
 
     public void printDifficulties() {

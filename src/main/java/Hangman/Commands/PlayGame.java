@@ -16,6 +16,7 @@ public class PlayGame {
         setLives.printDifficulties();
         HangmanDifficulty difficulty = setLives.setDifficulty();
         int lives = difficulty.getLives();
+        System.out.println(wordToGuessArray.toString());
         ArrayList<Character> initialDisplay = displayWord.initialDisplay(wordToGuessArray);
         System.out.println(initialDisplay);
         setLives.setLives(lives);
@@ -28,7 +29,7 @@ public class PlayGame {
                 HangmanStages.printHangman(setLives.getLives(), difficulty);
             }
             System.out.println("Lives left: " + setLives.getLives());
-            gameOver = checkInput.checkGameOver(wordToGuessArray, charGuess, setLives.getLives(), wordToGuess);
+            gameOver = checkInput.checkGameOver(wordToGuessArray, charGuess, setLives.getLives());
         } while (!gameOver);
     }
     public static boolean playAgain(){
